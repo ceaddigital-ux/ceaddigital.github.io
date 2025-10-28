@@ -7,19 +7,8 @@
   <meta name="description" content="CEAD — Centro de Estudos em Agricultura Digital. Pesquisa aplicada, projetos e formação em agricultura digital." />
   <link rel="icon" href="img/logo.png" />
   <style>
-    :root{
-      --bg:#F7F7F5;
-      --card:#FFFFFF;
-      --border:#E5E7EB;
-      --text:#1F2937;
-      --muted:#5B6B73;
-      --primary:#2E7D32;
-      --primary-400:#4CAF50;
-      --accent:#A3D65C;
-      --earth:#8C6239;
-      --earth-600:#6B4F2A;
-      --ring:#A3D65C;
-    }
+    :root{ --bg:#F7F7F5; --card:#FFFFFF; --border:#E5E7EB; --text:#1F2937; --muted:#5B6B73;
+      --primary:#2E7D32; --primary-400:#4CAF50; --accent:#A3D65C; --earth:#8C6239; --earth-600:#6B4F2A; --ring:#A3D65C; }
     *{box-sizing:border-box}
     html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.5}
     a{color:var(--primary);text-decoration:none}
@@ -82,6 +71,7 @@
       </nav>
     </div>
   </header>
+
   <main class="container" id="top">
     <section class="hero">
       <div>
@@ -95,6 +85,7 @@
       </div>
       <div class="card figure" aria-hidden="true"></div>
     </section>
+
     <section id="areas">
       <h2 style="margin:0 0 16px;color:var(--primary)">Áreas de atuação</h2>
       <div class="grid-3">
@@ -112,6 +103,7 @@
         </div>
       </div>
     </section>
+
     <section id="sobre" class="grid-2">
       <div class="card">
         <h2 style="margin:0 0 12px;color:var(--primary)">Sobre o CEAD</h2>
@@ -126,6 +118,7 @@
         </ul>
       </div>
     </section>
+
     <section id="equipe">
       <h2 style="margin:0 0 16px;color:var(--primary)">Sócios</h2>
       <div class="grid-4">
@@ -155,6 +148,7 @@
         </div>
       </div>
     </section>
+
     <section id="contato">
       <div class="card">
         <h2 style="margin:0 0 12px;color:var(--primary)">Contato</h2>
@@ -183,12 +177,14 @@
       </div>
     </section>
   </main>
+
   <footer>
     <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
       <small>© <span id="year"></span> CEAD — Centro de Estudos em Agricultura Digital</small>
       <small><a href="#top">Topo</a></small>
     </div>
   </footer>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     function handleSubmit(e){
