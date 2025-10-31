@@ -7,8 +7,10 @@
   <meta name="description" content="CEAD — Centro de Estudos em Agricultura Digital. Pesquisa aplicada, projetos e formação em agricultura digital." />
   <link rel="icon" href="img/logo.png" />
   <style>
-    :root{ --bg:#F7F7F5; --card:#FFFFFF; --border:#E5E7EB; --text:#1F2937; --muted:#5B6B73;
-      --primary:#2E7D32; --primary-400:#4CAF50; --accent:#A3D65C; --earth:#8C6239; --earth-600:#6B4F2A; --ring:#A3D65C; }
+    :root{
+      --bg:#F7F7F5; --card:#FFFFFF; --border:#E5E7EB; --text:#1F2937; --muted:#5B6B73;
+      --primary:#2E7D32; --primary-400:#4CAF50; --accent:#A3D65C; --earth:#8C6239; --earth-600:#6B4F2A; --ring:#A3D65C;
+    }
     *{box-sizing:border-box}
     html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.5}
     a{color:var(--primary);text-decoration:none}
@@ -22,7 +24,7 @@
     .menu{display:flex;gap:18px}
     .menu a{color:var(--text);opacity:.9}
     .menu a:hover{opacity:1}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;font-weight:700}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;font-weight:700}
     .btn-primary{background:linear-gradient(90deg,var(--primary),var(--primary-400));color:#fff;border:1px solid var(--primary-400)}
     .btn-primary:hover{filter:brightness(1.03)}
     .btn-earth{background:#fff;border:1px solid var(--earth);color:var(--earth-600)}
@@ -127,24 +129,40 @@
           <h3>Dra. Cenneya Martins</h3>
           <small>Professora</small>
           <p class="muted">Engenheira Agrônoma. Mestra em Agronomia (MIP). Doutora em Engenharia Agrícola.</p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:4px;">
+            <a class="btn btn-earth" href="http://lattes.cnpq.br/2945797464654037" target="_blank">📄 Lattes</a>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/cenneya-martins-179311179/" target="_blank">🔗 LinkedIn</a>
+          </div>
         </div>
         <div class="card team-card">
           <img src="img/oldoni.jpg" alt="Dr. Henrique Oldoni">
           <h3>Dr. Henrique Oldoni</h3>
           <small>Professor</small>
           <p class="muted">Engenheiro Agrícola. Mestre em Eng. Agrícola (Agri. de Precisão). Doutor em Agronomia.</p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:4px;">
+            <a class="btn btn-earth" href="http://lattes.cnpq.br/8384014188158755" target="_blank">📄 Lattes</a>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/henriqueoldoni/" target="_blank">🔗 LinkedIn</a>
+          </div>
         </div>
         <div class="card team-card">
           <img src="img/maiara.jpg" alt="Dra. Maiara Pusch">
           <h3>Dra. Maiara Pusch</h3>
           <small>Professora</small>
           <p class="muted">Engenheira Agrícola. Mestra em Engenharia de Sistemas. Doutora em Engenharia Agrícola.</p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:4px;">
+            <a class="btn btn-earth" href="http://lattes.cnpq.br/5062705558356115" target="_blank">📄 Lattes</a>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/maiarapusch/" target="_blank">🔗 LinkedIn</a>
+          </div>
         </div>
         <div class="card team-card">
           <img src="img/agda.jpg" alt="Dra. Agda Loureiro">
           <h3>Dra. Agda Loureiro</h3>
           <small>Professora</small>
           <p class="muted">Engenheira Agrícola. Mestra em Máquinas Agrícolas (Agri. de Precisão). Doutora em Engenharia Agrícola.</p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:4px;">
+            <a class="btn btn-earth" href="http://lattes.cnpq.br/7112574061987202" target="_blank">📄 Lattes</a>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/agdaloureiro/" target="_blank">🔗 LinkedIn</a>
+          </div>
         </div>
       </div>
     </section>
