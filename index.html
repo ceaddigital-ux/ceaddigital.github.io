@@ -42,32 +42,21 @@
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .grid-3 .card h3,.grid-2 .card h3{margin:0 0 8px;font-size:18px;color:var(--primary)}
-    .grid-3 .card p,.grid-2 .card p{margin:0;color:var(--muted)}
     .team-card{display:flex;flex-direction:column;gap:10px}
-    .team-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;border:1px solid var(--border);background:#fff}
+    .team-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;border:1px solid var(--border)}
     .team-card h3{margin:0;color:var(--earth-600)}
     .team-card small{color:var(--muted)}
-    form{display:grid;gap:12px}
-    input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:#fff;color:var(--text)}
-    input:focus,textarea:focus{outline:3px solid var(--ring);outline-offset:2px}
-    textarea{min-height:120px}
     footer{padding:28px 0;border-top:1px solid var(--border);color:var(--muted)}
-    @media (max-width:1100px){.grid-4{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr 1fr}.grid-2{grid-template-columns:1fr}}
-    @media (max-width:600px){.grid-3,.grid-4{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a class="brand" href="#top" aria-label="Página inicial CEAD">
-        <img src="img/logo.png" alt="Logo CEAD"/><span>CEAD</span>
-      </a>
+      <a class="brand" href="#top"><img src="img/logo.png" alt="Logo CEAD"/><span>CEAD</span></a>
       <nav class="menu">
         <a href="#areas">Áreas</a>
         <a href="#sobre">Sobre</a>
-        <a href="#equipe">Equipe</a>
+        <a href="#equipe">Nossa Equipe</a>
         <a href="#contato">Contato</a>
         <a class="btn btn-primary" href="#contato">Fale conosco</a>
       </nav>
@@ -79,141 +68,75 @@
       <div>
         <span class="chip">🌱 Agricultura Digital • SIG • Geostatística</span>
         <h1>Centro de Estudos em Agricultura Digital</h1>
-        <p>Pesquisa aplicada, projetos e capacitação em agricultura digital, dados espaciais e decisão baseada em evidências.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btn-primary" href="#areas">Nossas áreas</a>
-          <a class="btn btn-earth" href="#equipe">Conheça a equipe</a>
-        </div>
+        <p>Pesquisa aplicada, projetos e capacitação em agricultura digital.</p>
       </div>
-      <div class="card figure" aria-hidden="true"></div>
+      <div class="card figure"></div>
     </section>
 
     <section id="areas">
       <h2 style="margin:0 0 16px;color:var(--primary)">Áreas de atuação</h2>
       <div class="grid-3">
-        <div class="card">
-          <h3>Geoprocessamento</h3>
-          <p>Mapeamento, SIG, sensoriamento remoto, KML/GeoJSON e painéis interativos.</p>
-        </div>
-        <div class="card">
-          <h3>Modelagem & Dados</h3>
-          <p>Geostatística, aprendizado de máquina, otimização e suporte à decisão.</p>
-        </div>
-        <div class="card">
-          <h3>Projetos & Extensão</h3>
-          <p>Provas de conceito, capacitação e transferência de tecnologia.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="sobre" class="grid-2">
-      <div class="card">
-        <h2 style="margin:0 0 12px;color:var(--primary)">Sobre o CEAD</h2>
-        <p class="muted">O CEAD reúne professores e pesquisadores para desenvolver soluções de agricultura digital com foco em aplicabilidade e formação. Atuamos com parceiros públicos e privados.</p>
-      </div>
-      <div class="card">
-        <h2 style="margin:0 0 12px;color:var(--primary)">Destaques</h2>
-        <ul style="margin:0;padding-left:18px;color:var(--muted)">
-          <li>Arquitetura simples: HTML + CSS + JS estático.</li>
-          <li>Pronto para GitHub Pages / Cloudflare Pages.</li>
-          <li>Formulário integrável (Netlify Forms, Formspree ou backend próprio).</li>
-        </ul>
+        <div class="card"><h3>Geoprocessamento</h3><p>Mapeamento, SIG, Sensoriamento.</p></div>
+        <div class="card"><h3>Modelagem & Dados</h3><p>Geostatística, ML e suporte à decisão.</p></div>
+        <div class="card"><h3>Projetos & Extensão</h3><p>Provas de conceito e transferência tecnológica.</p></div>
       </div>
     </section>
 
     <section id="equipe">
-      <h2 style="margin:0 0 16px;color:var(--primary)">Sócios</h2>
+      <h2 style="margin:0 0 16px;color:var(--primary)">Nossa Equipe</h2>
       <div class="grid-4">
+
         <div class="card team-card">
-          <img src="img/cenneya.jpg" alt="Dra. Cenneya Martins">
+          <img src="img/cenneya.jpg">
           <h3>Dra. Cenneya Martins</h3>
-          <small>Professora</small>
-          <p class="muted">Engenheira Agrônoma. Mestra em Agronomia (MIP). Doutora em Engenharia Agrícola.</p>
-          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:4px;">
+          <div style="display:flex;gap:8px;">
             <a class="btn btn-earth" href="http://lattes.cnpq.br/2945797464654037" target="_blank">📄 Lattes</a>
             <a class="btn btn-primary" href="https://www.linkedin.com/in/cenneya-martins-179311179/" target="_blank">🔗 LinkedIn</a>
           </div>
         </div>
+
         <div class="card team-card">
-          <img src="img/oldoni.jpg" alt="Dr. Henrique Oldoni">
+          <img src="img/oldoni.jpg">
           <h3>Dr. Henrique Oldoni</h3>
-          <small>Professor</small>
-          <p class="muted">Engenheiro Agrícola. Mestre em Eng. Agrícola (Agri. de Precisão). Doutor em Agronomia.</p>
-          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:4px;">
+          <div style="display:flex;gap:8px;">
             <a class="btn btn-earth" href="http://lattes.cnpq.br/8384014188158755" target="_blank">📄 Lattes</a>
             <a class="btn btn-primary" href="https://www.linkedin.com/in/henriqueoldoni/" target="_blank">🔗 LinkedIn</a>
           </div>
         </div>
+
         <div class="card team-card">
-          <img src="img/maiara.jpg" alt="Dra. Maiara Pusch">
+          <img src="img/maiara.jpg">
           <h3>Dra. Maiara Pusch</h3>
-          <small>Professora</small>
-          <p class="muted">Engenheira Agrícola. Mestra em Engenharia de Sistemas. Doutora em Engenharia Agrícola.</p>
-          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:4px;">
+          <div style="display:flex;gap:8px;">
             <a class="btn btn-earth" href="http://lattes.cnpq.br/5062705558356115" target="_blank">📄 Lattes</a>
             <a class="btn btn-primary" href="https://www.linkedin.com/in/maiarapusch/" target="_blank">🔗 LinkedIn</a>
           </div>
         </div>
+
         <div class="card team-card">
-          <img src="img/agda.jpg" alt="Dra. Agda Loureiro">
+          <img src="img/agda.jpg">
           <h3>Dra. Agda Loureiro</h3>
-          <small>Professora</small>
-          <p class="muted">Engenheira Agrícola. Mestra em Máquinas Agrícolas (Agri. de Precisão). Doutora em Engenharia Agrícola.</p>
-          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:4px;">
+          <div style="display:flex;gap:8px;">
             <a class="btn btn-earth" href="http://lattes.cnpq.br/7112574061987202" target="_blank">📄 Lattes</a>
             <a class="btn btn-primary" href="https://www.linkedin.com/in/agdaloureiro/" target="_blank">🔗 LinkedIn</a>
           </div>
         </div>
+
       </div>
     </section>
 
     <section id="contato">
-      <div class="card">
-        <h2 style="margin:0 0 12px;color:var(--primary)">Contato</h2>
-        <p style="margin:0 0 12px">Email: <a href="mailto:cead.digital@gmail.com">cead.digital@gmail.com</a></p>
-        <form onsubmit="return handleSubmit(event)">
-          <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
-            <div>
-              <label for="nome">Nome</label>
-              <input id="nome" name="nome" required />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
-            </div>
-          </div>
-          <div>
-            <label for="msg">Mensagem</label>
-            <textarea id="msg" name="msg" required></textarea>
-          </div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <button class="btn btn-primary" type="submit">Enviar</button>
-            <a class="btn btn-earth" href="mailto:cead.digital@gmail.com">Abrir e-mail</a>
-          </div>
-          <p id="form-status" aria-live="polite" style="margin:8px 0 0;color:var(--muted)"></p>
-        </form>
-      </div>
+      <h2 style="color:var(--primary)">Contato</h2>
+      <p>Email: <a href="mailto:cead.digital@gmail.com">cead.digital@gmail.com</a></p>
     </section>
   </main>
 
   <footer>
-    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
-      <small>© <span id="year"></span> CEAD — Centro de Estudos em Agricultura Digital</small>
-      <small><a href="#top">Topo</a></small>
+    <div class="container">
+      <small>© <span id="year"></span> CEAD</small>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    function handleSubmit(e){
-      e.preventDefault();
-      const data = Object.fromEntries(new FormData(e.target).entries());
-      console.log('Form CEAD:', data);
-      const el = document.getElementById('form-status');
-      el.textContent = 'Mensagem registrada localmente. Para receber por email, integre Netlify Forms, Formspree ou backend próprio.';
-      e.target.reset();
-      return false;
-    }
-  </script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
